@@ -17,8 +17,9 @@
 
     var NODES = 300;
     var GROUPS = 12;
+    /*
     var gData = {
-        nodes : [...Array(NODES).keys()].map(i => ({
+        nodes: [...Array(NODES).keys()].map(i => ({
             id: i, 
             group: Math.ceil(Math.random() * GROUPS)
         })), 
@@ -28,7 +29,7 @@
             source: id, 
             target:Math.round(Math.random() * (id-1))
         }))
-    }  
+    }   */
 
     $scope.init = function() {
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>> test")
@@ -50,7 +51,6 @@
     $scope.clickTextNode = function(val) {
       if( val == true) {
             $scope.Graph.nodeThreeObject(node => {
-
                 var obj  = new THREE.Mesh( 
                   new THREE.SphereGeometry(20), 
                   new THREE.MeshBasicMaterial({depthWrite: false, transparent: true, opacity:0})

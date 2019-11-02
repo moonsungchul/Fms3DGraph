@@ -16,7 +16,8 @@
     'BlurAdmin.pages.charts',
     'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
-    'BlurAdmin.pages.networkGraph'
+    'BlurAdmin.pages.networkGraph',
+    'BlurAdmin.pages.graph2d'
   ])
       .config(routeConfig);
 
